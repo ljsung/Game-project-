@@ -1,66 +1,88 @@
 package com.Game;
 
+import java.util.Scanner;
+
 public class Job extends DTO{
 
-	
-	public Job () {
-		setExp(0); 
-		setGold(0);
-		setJob1("창술사");
-		setJob2("전사");
-		setJob3("궁수");
-		
-	}
-	
 
+
+	Scanner sc = new Scanner(System.in);
 
 	public void lance() {
-		System.out.println("창술사가 선택되었습니다.");
+		int a =	getAtk()+5;
+		int d = getDef()+5;
+		int h = getHp()+5;
+		System.out.println("경험치 : " + getExp());
+		System.out.println("공격력 : " +a);
+		System.out.println("방어력 : " + d);
+		System.out.println("체력 : " + h);
+
 	}
-	public void lanceInfo() {
-		int Exp = 0;
-		int gold = 0;
-		int Atk = 15;
-		int Def = 10;
-		int Hp = 20;
-		System.out.println("경험치는 : " + Exp);
-		System.out.println("골드는 : " + gold);
-		System.out.println("공격력은 : " + Atk);
-		System.out.println("방어력은 : " + Def);
-		System.out.println("체력은 : " + Hp);
-	}
-	
+
 	public void worior() {
+		int a =	getAtk()-5;
+		int d = getDef()+5;
+		int h = getHp()+10;
 		System.out.println("전사가 선택되었습니다.");
+		System.out.println("경험치 : " + getExp());
+		System.out.println("공격력 : " +a);
+		System.out.println("방어력 : " + d);
+		System.out.println("체력 : " + h);
+
+
 	}
-	public void woriorInfo() {
-		int Exp1 = 0;
-		int gold1 = 0;
-		int Atk1 = 5;
-		int Def1 = 15;
-		int Hp1 = 25;
-		System.out.println("경험치는 : " + Exp1);
-		System.out.println("골드는 : " + gold1);
-		System.out.println("공격력은 : " + Atk1);
-		System.out.println("방어력은 : " + Def1);
-		System.out.println("체력은 : " + Hp1);
-	}
-	
 	public void archer() {
+		int a =	getAtk()-10;
+		int d = getDef();
+		int h = getHp();
 		System.out.println("궁수가 선택되었습니다.");
+		System.out.println("경험치 : " + getExp());
+		System.out.println("공격력 : " +a);
+		System.out.println("방어력 : " + d);
+		System.out.println("체력 : " + h);
 	}
-	public void archerInfo() {
-		int Exp2 = 0;
-		int gold2 = 0;
-		int Atk2 = 10;
-		int Def2 = 7;
-		int Hp2 = 15;
-		System.out.println("경험치는 : " + Exp2);
-		System.out.println("골드는 : " + gold2);
-		System.out.println("공격력은 : " + Atk2);
-		System.out.println("방어력은 : " + Def2);
-		System.out.println("체력은 : " + Hp2);
+	public void dungeon() {
+		System.out.println("던전에 입장했습니다.");
+		System.out.println("잡을 몬스터를 선택해 주세요.");
+		System.out.println("1.늑대 "+"\n2.오크");
+
 	}
-}
+		public void monster() {
+
+
+			int a = getAtk()-18;
+			int b = getAtk()-15;
+			int m = sc.nextInt();
+			int h = getHp() + 80; 
+			int w = getHp() + 30;
+			switch(m) {
+
+			case 1 :
+				System.out.println("늑대가 등장했습니다.");
+				System.out.println("체력 : " + w );
+				System.out.println("공격력 : " + a );	
+				System.out.println(w + - getAtk());
+				break;
+
+			case 2 :  
+				System.out.println("오크가 등장했습니다.");
+				System.out.println("체력 : " + h);
+				System.out.println("공격력 : " + b );
+				break;
+
+
+			}
+		}
+
+
+
+
+
+
+
+
+	}
+
+
 
 

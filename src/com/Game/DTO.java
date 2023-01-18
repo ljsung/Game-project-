@@ -3,107 +3,57 @@ package com.Game;
 public class DTO {
 
 	
-	private int num;
-	private int exp;
-	private String job;
-	private int gold;
-	private String dungeon;
-	private String monster;
-	private int upgrade;
+	private int Exp=0;
+	private int Atk=20;
+	private int Def=20;
+	private int Hp=20;
+
 	
-	
-	public DTO(int num, int exp, String job, int gold, String dungeon, String monster, int upgrade) {
+	public DTO(int exp, int atk, int def, int hp) {
 		super();
-		this.num = num;
-		this.exp = exp;
-		this.job = job;
-		this.gold = gold;
-		this.dungeon = dungeon;
-		this.monster = monster;
-		this.upgrade = upgrade;
+		this.Exp = exp;
+		this.Atk = atk;
+		this.Def = def;
+		this.Hp = hp;
 	}
-
-
-	public int getNum() {
-		return num;
-	}
-
-
-	public void setNum(int num) {
-		this.num = num;
-	}
-
-
 	public int getExp() {
-		return exp;
+		return Exp;
 	}
-
-
+	public int getAtk() {
+		return Atk;
+	}
+	public int getDef() {
+		return Def;
+	}
+	public int getHp() {
+		return Hp;
+	}
 	public void setExp(int exp) {
-		this.exp = exp;
+		Exp = exp;
 	}
-
-
-	public String getJob() {
-		return job;
+	public void setAtk(int atk) {
+		Atk = atk;
 	}
-
-
-	public void setJob(String job) {
-		this.job = job;
+	public void setDef(int def) {
+		Def = def;
 	}
-
-
-	public int getGold() {
-		return gold;
+	public void setHp(int hp) {
+		Hp = hp;
 	}
-
-
-	public void setGold(int gold) {
-		this.gold = gold;
-	}
-
-
-	public String getDungeon() {
-		return dungeon;
-	}
-
-
-	public void setDungeon(String dungeon) {
-		this.dungeon = dungeon;
-	}
-
-
-	public String getMonster() {
-		return monster;
-	}
-
-
-	public void setMonster(String monster) {
-		this.monster = monster;
-	}
-
-
-	public int getUpgrade() {
-		return upgrade;
-	}
-
-
-	public void setUpgrade(int upgrade) {
-		this.upgrade = upgrade;
-	}
-	
 	public DTO() {}
 	public String getInformation() {
-		return "MemberDTO [ "+
-				" num = " + num +
-				", exp=" + exp +
-				", gold=" + gold +
-				", dungeon=" + dungeon +
-				", monster= " + monster +
-				", job = " + job +
-				", upgrade = " + upgrade +
+		return "DTO [ "
+				+ "Exp = " + Exp +
+				", Atk =" + Atk +
+				", Def =" + Def +
+				", Hp =" + Hp +
 				"]";
 	
-}
-}
+	}
+
+
+
+	
+		
+	}
+	
