@@ -93,6 +93,7 @@ public class DTO {
 		this.upgrade = upgrade;
 	}
 	
+	public DTO() {}
 	public String getInformation() {
 		return "MemberDTO [ "+
 				" num = " + num +
