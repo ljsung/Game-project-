@@ -7,6 +7,7 @@ public class DTO {
 	private int Atk=20;
 	private int Def=20;
 	private int Hp=20;
+	
 
 	
 	public DTO(int exp, int atk, int def, int hp) {

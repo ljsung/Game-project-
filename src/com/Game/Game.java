@@ -38,10 +38,13 @@ public class Game extends game2{
 			
 		
 		}
+
+			}
+		}
 		
 
 
-		}
+		
 	}
 
 
@@ -49,7 +52,6 @@ public class Game extends game2{
 
 
 
-}
 
 
 
