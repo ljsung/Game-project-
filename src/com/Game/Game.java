@@ -7,55 +7,42 @@ package com.Game;
 
 import java.util.Scanner;
 
-public class Game extends game2{
+public class Game {
 
 	public static void main(String[] args) {
-		game2 game2=new game2();
-			
-		
+
+		User player = new User();
+		Dungeon dungeon = new Dungeon();
 		Scanner sc = new Scanner(System.in);
-		while(true) {
+		
+		while (true) {
 			System.out.println("======메뉴화면======");
-			System.out.println("1.캐릭터 선택하기");
-			System.out.println("2.캐릭터 정보보기 ");
-			System.out.println("3.던전 ");
-			System.out.println("4. 제련소 ");
-			System.out.println("6. 메뉴 선택 ");
-		
-		
-		int a =sc.nextInt();
-		switch(a) {
-		
-		case 1:
-			game2.choice();
-			break;
-		case 2:
-			game2.lance();
-			break;
-		case 3:
-			game2.dungeon();
-			break;
-			
-		
-		}
+			System.out.println("게임이 시작되었습니다.");
+			System.out.println("1.캐릭터 정보보기 ");
+			System.out.println("2.던전입장 ");
+			System.out.println("6. 게임 종료 ");
+
+			int a = sc.nextInt();
+			player.setHp(20);
+			switch (a) {
+
+			case 1:
+				player.Player();
+				break;
+			case 2:
+				dungeon.dungeon(player);
+				break;
+			case 6:
+				
+				return;
+
+			default:
+				System.out.println("캐릭터가 할수 없는 행동입니다.");
+				break;
 
 			}
+
 		}
-		
-
-
-		
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+}
