@@ -35,7 +35,9 @@ public class Dungeon {
 			case 1 :	
 			player.Attack(monster);
 			if(monster.getHp() <= 0) {
-				System.out.println(monster.getName()+"가 사망했습니다.");
+				System.out.println(monster.getName()+"가 사망했습니다.");	
+			player.setExp(player.getExp()+monster.getExp());
+			System.out.println("플레이어가" + monster.getName() + "를 잡아서 " + monster.getExp()+ "EXP를 얻었습니다.");
 				break;
 				
 				
@@ -44,6 +46,7 @@ public class Dungeon {
 			
 			break;
 			case 2 :
+				player.setHp(20+(player.level-1)*2);
 				return;
 			}
 

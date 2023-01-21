@@ -16,20 +16,18 @@ public class DTO {
 	public int getAtk() {
 		return Atk;
 	}
-
-	
 	public int getHp() {
 		return Hp;
 	}
 	public void setExp(int exp) {
-		Exp = exp;
+		this.Exp = exp;
 	}
 	public void setAtk(int atk) {
-		Atk = atk;
+		this.Atk = atk;
 	}
 
 	public void setHp(int hp) {
-		Hp = hp;
+		this.Hp = hp;
 	}
 	public String getInformation() {
 		return "DTO [ "

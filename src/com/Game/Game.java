@@ -23,7 +23,9 @@ public class Game {
 			System.out.println("6. 게임 종료 ");
 
 			int a = sc.nextInt();
-			player.setHp(20);
+			if(player.getHp() <= 0 ) {
+				player.setHp(20);
+			}
 			switch (a) {
 
 			case 1:
