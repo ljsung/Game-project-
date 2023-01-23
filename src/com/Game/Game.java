@@ -35,7 +35,7 @@ public class Game {
 				dungeon.dungeon(player);
 				break;
 			case 6:
-				
+				System.out.println("게임을 종료합니다");
 				return;
 
 			default:
