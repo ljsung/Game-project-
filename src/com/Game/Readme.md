@@ -15,4 +15,6 @@
 4.커뮤니케이션 다이어그램
 
 5.클래스 다이어그램
+![커뮤니](https://user-images.githubusercontent.com/122503631/214115168-e730fe66-65e2-45b1-81dd-59b1aabf524d.PNG)
+![class](https://user-images.githubusercontent.com/122503631/214115174-540c5ad2-c588-4b0d-b4fa-11b2b8e6aedb.PNG)
 
